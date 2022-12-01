@@ -19,5 +19,14 @@ pipeline {
       }
     }
 
+    stage('Package') {
+      steps {
+        warnError(message: 'successful') {
+          sh 'pwd'
+        }
+
+      }
+    }
+
   }
 }
